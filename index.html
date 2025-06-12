@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <title>Tv Girl - Te amo 💜💙</title>
+</head>
+<body id="conteudo">
+
+        <div id="image1" class="images">
+            
+        </div>
+        <div id="image2" class="images">
+
+        </div>
+        <div id="image3" class="images">
+
+        </div>
+
+      <!-- Conteúdo principal -->
+<div class="bola"></div>
+<div class="mensagem">Vem AQUIIII!! 😍</div>
+  <!-- <div id="preloader">
+    <div class="loader"></div>
+    <p>Espera ai AMORR!! 💜💙</p>
+  </div>
+
+  <div id="tela-senha" style="display: none;">
+    <h2>Digite a senha para acessar</h2>
+    <input type="password" id="senha" placeholder="Senha" />
+    <button id="btn-login">Entrar</button>
+    <p id="msg-erro" style="color: red; display: none;">Senha incorreta. Tente novamente.</p>
+  </div> -->
+
+
+    <header>
+        <nav>
+            <div class="logoNav">
+                <i id="heartNav1" class="bi bi-heart"></i>
+                <i id="heartNav2" class="bi bi-heart"></i>
+            </div>
+        </nav>
+    </header>
+    <main class="container">
+        <img id="imgPrincipal"  src="./src/assets/img/imgPrincipal.png" alt="">
+        <img id="cardFotoAzul" src="./src/assets/img/cardFotoAzul.png" alt="">
+        <img id="cardFotoRosa" src="./src/assets/img/cardFotoRosa.png" alt="">
+
+    </main>
+    <section class="sec2">
+        <img class="hidden" id="cardAlbum" src="./src/assets/img/cardTvGirlAlbum.png" alt="">
+        <img class="hidden" id="cardAlbumAzul" src="./src/assets/img/cardTvGirlAzul.png" alt="">
+        <img class="hidden" id="cardHeart" src="./src/assets/img/heart.png" alt="">
+    </section>
+    <section class="sec3">
+        <h1>Perguntas</h1>
+            <div class="quiz-container">
+        <!-- Container para todas as perguntas -->
+        <div id="questionsContainer">
+            <!-- As perguntas serão injetadas aqui pelo JavaScript -->
+        </div>
+
+        <!-- Botão de envio (inicialmente oculto até que as perguntas sejam carregadas) -->
+        <button id="submitButton" class="nav-button hidden2">Enviar Respostas</button>
+
+        <!-- Seção de resultados (inicialmente oculta) -->
+        <div id="resultsSection" class="results-screen hidden2">
+            <h2>Questionário Concluído!</h2>
+            <p id="scoreText">Você acertou 0 de 0 perguntas.</p>
+            <button id="restartButton">Reiniciar Questionário</button>
+        </div>
+    </section>
+        <section style="height: 700vh;" class="sec4">
+
+        </section>
+
+
+    <script src="src/js/index.js"></script>
+    <script src="src/js/perguntas.js"></script>
+    <script>
+        window.addEventListener('scroll', () => {
+  const div = document.querySelector('.images');
+
+  if (window.scrollY > 7000) {
+    div.style.height = '100vh';
+    div.style.width = '100vw';
+    div.style.background = "url('./src/assets/img/Us.jpg') center center / cover no-repeat";
+  } else if (window.scrollY > 6500) {
+    div.style.height = '100vh';
+    div.style.width = '100vw';
+    div.style.background = "url('./src/assets/img/Us2.jpg') center center / cover no-repeat";
+  } else if (window.scrollY > 6000) {
+    div.style.height = '100vh';
+    div.style.width = '100vw';
+    div.style.background = "url('./src/assets/img/Us3.jpg') center center / cover no-repeat";
+  } else if (window.scrollY > 5500) {
+    div.style.height = '100vh';
+    div.style.width = '100vw';
+    div.style.background = "url('./src/assets/img/Us4.jpg') center center / cover no-repeat";
+  } else if (window.scrollY > 5000) {
+    div.style.height = '100vh';
+    div.style.width = '100vw';
+    div.style.background = "url('./src/assets/img/Us5.jpg') center center / cover no-repeat";
+  } else if (window.scrollY > 4500) {
+    div.style.height = '100vh';
+    div.style.width = '100vw';
+    div.style.background = "url('./src/assets/img/Us6.jpg') center center / cover no-repeat";
+  } else if (window.scrollY > 4000) {
+    div.style.height = '100vh';
+    div.style.width = '100vw';
+    div.style.background = "url('./src/assets/img/Us7.jpg') center center / cover no-repeat";
+  } else {
+    div.style.height = '0px';
+    div.style.width = '0px';
+  }
+});
+
+    </script>
+</body>
+</html>
