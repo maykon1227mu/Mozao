@@ -118,25 +118,25 @@ function animate() {
 animate();
 
 
-// window.addEventListener('load', () => {
-//   setTimeout(() => {
-//     document.getElementById('preloader').style.display = 'none';
-//     document.getElementById('tela-senha').style.display = 'flex';
-//   }, 4000);
-// });
+ window.addEventListener('load', () => {
+   setTimeout(() => {
+     document.getElementById('preloader').style.display = 'none';
+     document.getElementById('tela-senha').style.display = 'flex';
+   }, 4000);
+ });
 
-// const senhaCorreta = '12345'; // altere para sua senha desejada
+ const senhaCorreta = '12345'; // altere para sua senha desejada
 
-// document.getElementById('btn-login').addEventListener('click', () => {
-//   const senhaDigitada = document.getElementById('senha').value;
+ document.getElementById('btn-login').addEventListener('click', () => {
+   const senhaDigitada = document.getElementById('senha').value;
 
-//   if (senhaDigitada === senhaCorreta) {
-//     document.getElementById('tela-senha').style.display = 'none';
-//   } else {
-//     const msgErro = document.getElementById('msg-erro');
-//     msgErro.style.display = 'block';
-//   }
-// });
+   if (senhaDigitada === senhaCorreta) {
+     document.getElementById('tela-senha').style.display = 'none';
+   } else {
+     const msgErro = document.getElementById('msg-erro');
+     msgErro.style.display = 'block';
+   }
+});
 
 
 const myObserver = new IntersectionObserver((entries) => {
