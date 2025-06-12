@@ -125,7 +125,7 @@ animate();
    }, 4000);
  });
 
- const senhaCorreta = '12345'; // altere para sua senha desejada
+ const senhaCorreta = '1227'; // altere para sua senha desejada
 
  document.getElementById('btn-login').addEventListener('click', () => {
    const senhaDigitada = document.getElementById('senha').value;
